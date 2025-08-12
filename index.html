@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - VSL</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #0d47a1, #000, #b71c1c);
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .vsl {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            min-width: 0;
+            margin-bottom: 20px;
+        }
+        .vsl iframe, .vsl video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 4px solid #b71c1c;
+            border-radius: 8px;
+        }
+        .btn {
+            display: block;
+            width: auto;
+            padding: 10px 20px;
+            margin: 20px auto;
+            background-color: #b71c1c;
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .btn:hover {
+            background-color: #d32f2f;
+        }
+        .proofs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        .proofs img {
+            width: 100%;
+            border-radius: 5px;
+            border: 2px solid #0d47a1;
+            height: auto;
+        }
+        .garantia {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .garantia img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+            border: 2px solid #b71c1c;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            background-color: #111;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Assista e Descubra</h1>
+    </header>
+
+    <div class="container">
+        <!-- VSL Destaque -->
+        <div class="vsl">
+            <iframe src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Botão 1 -->
+        <a href="checkout_link_aqui" class="btn">Quero Garantir Agora</a>
+
+        <!-- Provas Sociais -->
+        <div class="proofs">
+            <img src="prova1.jpg" alt="Prova Social 1">
+            <img src="prova2.jpg" alt="Prova Social 2">
+            <img src="prova3.jpg" alt="Prova Social 3">
+            <img src="prova4.jpg" alt="Prova Social 4">
+        </div>
+
+        <!-- Botão 2 -->
+        <a href="checkout_link_aqui" class="btn">Quero Garantir Agora</a>
+
+        <!-- Garantia no fundo -->
+        <div class="garantia">
+            <img src="garantia.jpg" alt="Garantia">
+        </div>
+    </div>
+
+    <footer>
+        SpaceCloudDigital | CineLivre Premium
+    </footer>
+</body>
+</html>
